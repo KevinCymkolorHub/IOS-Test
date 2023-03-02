@@ -13,11 +13,17 @@ class PageVC: XibBaseVC {
     @IBOutlet weak var uiPageControl: UIPageControl!
     @IBOutlet weak var uiScrollView: UIScrollView!
     
+    @IBOutlet weak var button1: test1Button!
+    @IBOutlet weak var button2: test1Button!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         self.uiScrollView.delegate = self
+        self.button1.isEnabled = false
+        self.button2.isEnabled = true
+        
     }
     
     @IBAction func pageControllSwitch(_ sender: UIPageControl) {

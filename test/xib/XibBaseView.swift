@@ -12,7 +12,7 @@ protocol PXib {
     func setUI(owner: UIView, topAnchor: CGFloat) -> Void
 }
 
-internal class XibBaseVC: UIViewController, PXib {
+internal class XibBaseVC: BaseController, PXib {
 
     internal var selfView: UIView { get { return self.view! } }
 

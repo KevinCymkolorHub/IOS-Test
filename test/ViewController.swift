@@ -7,6 +7,15 @@
 
 import UIKit
 
+class BaseController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.view.backgroundColor = .red //UIColor(hue: 220, saturation: 0.5, brightness: 0.08, alpha: 1)
+    }
+}
+
 class ViewController: UIViewController {
 
     private var subviews: [UIViewController] = []
@@ -18,7 +27,6 @@ class ViewController: UIViewController {
         self.addChildView(childView: pageVC, isHiddden: false)
     }
 
-
     private func addChildView<T>(childView: T, isHiddden: Bool = true) where T : UIViewController, T : PXib {
         addChild(childView)
         view.addSubview(childView.view)
@@ -28,4 +36,3 @@ class ViewController: UIViewController {
         self.subviews.append(childView)
     }
 }
-

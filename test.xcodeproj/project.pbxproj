@@ -15,8 +15,10 @@
 		64875399292DC0140074FF58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64875397292DC0140074FF58 /* LaunchScreen.storyboard */; };
 		64A632F6299CD98D0081E3D8 /* lableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A632F5299CD98D0081E3D8 /* lableUI.swift */; };
 		64ADE3FE2942DB0D0070BFCD /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ADE3FC2942DB0D0070BFCD /* PageVC.swift */; };
-		64ADE3FF2942DB0D0070BFCD /* PageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64ADE3FD2942DB0D0070BFCD /* PageVC.xib */; };
 		64ADE4012942FD0E0070BFCD /* XibBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ADE4002942FD0E0070BFCD /* XibBaseView.swift */; };
+		C939D4A729B041B000B16ACE /* PageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C939D4A929B041B000B16ACE /* PageVC.xib */; };
+		C939D4B029B0469B00B16ACE /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C939D4AF29B0469A00B16ACE /* Manrope-SemiBold.ttf */; };
+		C995FFF629A4974700F1DCEC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C995FFF529A4974700F1DCEC /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +32,15 @@
 		6487539A292DC0140074FF58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64A632F5299CD98D0081E3D8 /* lableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lableUI.swift; sourceTree = "<group>"; };
 		64ADE3FC2942DB0D0070BFCD /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
-		64ADE3FD2942DB0D0070BFCD /* PageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageVC.xib; sourceTree = "<group>"; };
 		64ADE4002942FD0E0070BFCD /* XibBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibBaseView.swift; sourceTree = "<group>"; };
+		C939D4A629B0416A00B16ACE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		C939D4A829B041B000B16ACE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PageVC.xib; sourceTree = "<group>"; };
+		C939D4AB29B041B600B16ACE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PageVC.strings; sourceTree = "<group>"; };
+		C939D4AD29B041B700B16ACE /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/PageVC.strings"; sourceTree = "<group>"; };
+		C939D4AF29B0469A00B16ACE /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
+		C995FFF529A4974700F1DCEC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C9D4404E29B040C100DCAAF7 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		C9D4404F29B040C200DCAAF7 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +57,7 @@
 		64875380292DC0130074FF58 = {
 			isa = PBXGroup;
 			children = (
+				C995FFF529A4974700F1DCEC /* .gitignore */,
 				6487538B292DC0130074FF58 /* test */,
 				6487538A292DC0130074FF58 /* Products */,
 			);
@@ -64,6 +74,7 @@
 		6487538B292DC0130074FF58 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				C939D4AE29B045DA00B16ACE /* font */,
 				64A632F4299CD72A0081E3D8 /* CustUIView */,
 				64ADE3FB2942DA7F0070BFCD /* xib */,
 				6487538C292DC0130074FF58 /* AppDelegate.swift */,
@@ -90,9 +101,17 @@
 			children = (
 				64ADE4002942FD0E0070BFCD /* XibBaseView.swift */,
 				64ADE3FC2942DB0D0070BFCD /* PageVC.swift */,
-				64ADE3FD2942DB0D0070BFCD /* PageVC.xib */,
+				C939D4A929B041B000B16ACE /* PageVC.xib */,
 			);
 			path = xib;
+			sourceTree = "<group>";
+		};
+		C939D4AE29B045DA00B16ACE /* font */ = {
+			isa = PBXGroup;
+			children = (
+				C939D4AF29B0469A00B16ACE /* Manrope-SemiBold.ttf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +156,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 64875380292DC0130074FF58;
 			productRefGroup = 6487538A292DC0130074FF58 /* Products */;
@@ -153,9 +173,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C995FFF629A4974700F1DCEC /* .gitignore in Resources */,
 				64875399292DC0140074FF58 /* LaunchScreen.storyboard in Resources */,
-				64ADE3FF2942DB0D0070BFCD /* PageVC.xib in Resources */,
+				C939D4A729B041B000B16ACE /* PageVC.xib in Resources */,
 				64875396292DC0140074FF58 /* Assets.xcassets in Resources */,
+				C939D4B029B0469B00B16ACE /* Manrope-SemiBold.ttf in Resources */,
 				64875394292DC0130074FF58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +205,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				64875393292DC0130074FF58 /* Base */,
+				C9D4404E29B040C100DCAAF7 /* zh-Hant */,
+				C939D4A629B0416A00B16ACE /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -191,8 +215,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				64875398292DC0140074FF58 /* Base */,
+				C9D4404F29B040C200DCAAF7 /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C939D4A929B041B000B16ACE /* PageVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C939D4A829B041B000B16ACE /* Base */,
+				C939D4AB29B041B600B16ACE /* en */,
+				C939D4AD29B041B700B16ACE /* zh-Hant */,
+			);
+			name = PageVC.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -202,6 +237,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -262,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
